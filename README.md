@@ -17,22 +17,27 @@
 #### channel
 Youtubeのチャンネル情報を管理する。
 
-「Youtube API」に日毎のリクエスト制限が存在するため、チャンネル名はアプリケーションで動的に取得せずに、属性として保持している。
+「Youtube API」に日毎のリクエスト制限が存在するため、チャンネル情報はアプリケーションで動的に取得せずに、属性として保持している。
 
 |物理名|型|主キー|必須|説明|
 |--|--|--|--|--|
 |channel_id|varchar|1|Yes|チャンネルID|
 |channel_nm|varchar||Yes|テーブル**追加時**のチャンネル名|
+|thumbnails_url|varchar||Yes|テーブル**追加時**のサムネイルURL|
+|reg_datetime|timestamp|||チャンネル追加日時|
 
 #### video
 Youtubeの動画情報を管理する。
 
-動画は必ずチャンネルに紐づく。
+「Youtube API」に日毎のリクエスト制限が存在するため、動画情報はアプリケーションで動的に取得せずに、属性として保持している。
 
 |物理名|型|主キー|必須|説明|
 |--|--|--|--|--|
 |video_id|varchar|1|Yes|動画ID|
 |channel_id|varchar||Yes|動画が紐づくチャンネルID|
+|video_nm|varchar||Yes|テーブル**追加時**の動画名|
+|thumbnails_url|varchar||Yes|テーブル**追加時**のサムネイルURL|
+|reg_datetime|timestamp|||動画追加日時|
 
 #### comment
 アプリケーションで作成されたコメントを管理する。
@@ -41,7 +46,8 @@ Youtubeの動画情報を管理する。
 
 |物理名|型|主キー|必須|説明|
 |--|--|--|--|--|
-|category|varchar|1|Yes|コメントの種別 [```channel```, ```video```]|
-|foreign_id|varchar|2|Yes|チャンネルIDまたは動画ID|
+|id|serial|1|Yes|シーケンス|
+|category|varchar||Yes|コメントの種別 [```channel```, ```video```]|
+|foreign_id|varchar||Yes|チャンネルIDまたは動画ID|
 |comment|varchar||Yes|コメント|
-|reg_datetime|datetime||Yes|コメント作成日時|
+|reg_datetime|timestamp|||コメント作成日時|
