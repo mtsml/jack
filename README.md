@@ -5,9 +5,9 @@
 |--|--|--|--|--|
 |Django Jack|[ここ](https://django-jack.herokuapp.com/)|[ここ](https://github.com/mtsml/django-jack)|ガンガンいこうぜ|■■■■■|
 |Laravel Jack|[ここ](https://laravel-jack.herokuapp.com/)|[ここ](https://github.com/mtsml/laravel-jack)|バッチリがんばれ|■|
-|Vue Jack|[ここ](https://vue-jack.herokuapp.com/)|[ここ](https://github.com/mtsml/view-jack)|ガンガンいこうぜ|■■|
+|Vue Jack|[ここ](https://vue-jack.herokuapp.com/)|[ここ](https://github.com/mtsml/view-jack)|ガンガンいこうぜ|■■■|
 |Bash Jack|[ここ](http://hoge.hagetaka.art/index)|[ここ](https://github.com/mtsml/bash-jack)|フレームワークつかうな|■|
-|Angular Jack|[ここ](https://angular-jack.herokuapp.com/)|[ここ](https://github.com/mtsml/angular-jack)|ガンガンいこうぜ|■■|
+|Angular Jack|[ここ](https://angular-jack.herokuapp.com/)|[ここ](https://github.com/mtsml/angular-jack)|ガンガンいこうぜ|■■■|
 
 Markdownで進捗の良い表し方あるかな？
 
